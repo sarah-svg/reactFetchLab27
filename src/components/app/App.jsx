@@ -7,11 +7,10 @@ import {
 import List from '../Home/List';
 import Detail from '../Details/Detail';
 import Header from '../Header/Header';
-import styles from './App.css';
 
 export default function App() {
   return (
-    <div className={styles["App"]}>
+    <div >
       <Router>
         <Header />
         <Switch>
