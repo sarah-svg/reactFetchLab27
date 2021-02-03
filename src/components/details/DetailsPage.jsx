@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { getOneCharacter } from '../../services/xfilesapi.js';
-import CharacterDetail from '../Characters/CharacterDetail.jsx';
+import CharacterDetail from '../characters/CharacterDetail.jsx';
 
-export default class Detail extends Component {
+export default class DetailsPage extends Component {
   state = {
     character: {}
   }
@@ -15,7 +15,6 @@ export default class Detail extends Component {
   
   render() {
     const { character } = this.state;
-
     return (
       <>
         <CharacterDetail {...character} />

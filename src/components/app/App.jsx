@@ -4,28 +4,25 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import List from '../Home/List';
-import Detail from '../Details/Detail';
-
+import ListCharacters from '../home/ListOfCharacters';
+import DetailsPage from '../details/DetailsPage';
 
 export default function App() {
   return (
-    <div >
+    <div>
       <Router>
-      
         <Switch>
           <Route
             path="/"
             exact
-            component={List} 
+            component={ListCharacters} 
           />
           <Route
             path="/detail/:name"
-            component={Detail}
+            component={DetailsPage}
           />
         </Switch>
       </Router>
     </div>
-    
   );
 }

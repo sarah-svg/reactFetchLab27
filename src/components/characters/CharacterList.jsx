@@ -2,21 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Character from './Character';
 import { Link } from 'react-router-dom';
-import styles from './characterlist.css';
 
 const CharacterList = ({ characters }) => {
   const characterInfo = characters.map(character => (
-   
-    <span key={character.portrayedby}>
+    <div key={character.portrayedby}>
       <Link to={`/detail/${character.name}`}>
         <Character {...character} />
       </Link>
-    </span> 
-    
+    </div> 
   ));
-
   return (
-    <div className={styles['list']}>
+    <div>
       {characterInfo}
     </div>
   );

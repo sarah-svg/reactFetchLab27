@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { getCharacters } from '../../services/xfilesapi';
-import CharacterList from '../Characters/CharacterList';
-import styles from './List.css';
-export default class List extends Component {
+import CharacterList from '../characters/CharacterList';
+
+export default class ListCharacters extends Component {
   state = {
     characters: []
   }
@@ -14,9 +14,8 @@ export default class List extends Component {
 
   render() {
     const { characters } = this.state;
-
     return (
-      <section className={styles['main-list']}>
+      <section >
         <CharacterList characters={characters} />
       </section>
     );
