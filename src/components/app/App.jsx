@@ -6,13 +6,13 @@ import {
 } from 'react-router-dom';
 import List from '../Home/List';
 import Detail from '../Details/Detail';
-import Header from '../Header/Header';
+
 
 export default function App() {
   return (
     <div >
       <Router>
-        <Header />
+      
         <Switch>
           <Route
             path="/"
