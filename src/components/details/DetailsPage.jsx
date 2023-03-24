@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { getOneCharacter } from '../../services/xfilesapi.js';
 import CharacterDetail from '../characters/CharacterDetail.jsx';
-
+///is the containor
 export default class DetailsPage extends Component {
   state = {
     character: {}

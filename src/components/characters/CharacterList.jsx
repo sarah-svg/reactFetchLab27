@@ -12,9 +12,9 @@ const CharacterList = ({ characters }) => {
     </div> 
   ));
   return (
-    <div>
+    <ul data-testid="characters" >
       {characterInfo}
-    </div>
+    </ul >
   );
 };
 
